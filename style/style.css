@@ -9,6 +9,7 @@
 body {
     font-family: 'Dosis', sans-serif;
     overflow-x: hidden;
+    min-height: 5000px;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 }
 
 .container {
-    width: 93%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -159,12 +160,13 @@ nav li a {
 .desc {
     color: #6b6967;
     font-size: 23px;
+    text-align: justify;
 }
 
 .button {
     margin-top: 30px;
     display: flex;
-    width: 55%;
+    width: 60%;
     justify-content: space-between;
 }
 
@@ -181,24 +183,21 @@ nav li a {
 }
 
 /* Line */
-/* .line {
-    position: absolute;
+.line {
     display: block;
     width: 80%;
     height: 3px;
     background-color: #6b6967;
+    margin-top: 65px;
+    margin: 85px auto 0px;
     border-radius: 3px;
-    margin: -205px auto;
-    bottom: 200px;
-    right: 20px;
-    left: 20px;
     z-index: -1;
-} */
+}
 
 /* Fitur */
-.spesial-judul {
+.judul {
     text-align: center;
-    margin: 150px auto 30px auto;
+    margin: 40px 0px 40px 0px;
 }
 
 .fitur {
@@ -223,18 +222,12 @@ nav li a {
     margin-top: 20px;
     font-size: 18px;
     color: #6b6967;
+    text-align: justify;
 }
 
 /* Daftar Buku */
-.judul {
-    text-align: center;
-    margin: 30px 0px 30px 0px;
-}
-
 .center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .buku {
@@ -247,8 +240,8 @@ nav li a {
     margin-top: 10px;
 }
 
-/* Responsive */
-@media screen and (max-width: 760px) {
+/* Responsive Mobile*/
+@media screen and (max-width: 850px) {
     nav h1 {
         font-size: 25px;
     }
@@ -309,10 +302,9 @@ nav li a {
         margin-bottom: 5px;
     }
 
-    /* .line {
-        margin: -50px auto;
-        width: 80%;
-    } */
+    .line {
+        margin: 50px auto 20px;
+    }
 
     .spesial-judul {
         margin: 70px auto 30px auto;
@@ -348,7 +340,6 @@ nav li a {
     }
 
     .kedua .ket {
-        font-size: 15px;
         margin-bottom: 20px;
     }
 }
