@@ -105,7 +105,7 @@ nav li a {
     top: -3px;
     opacity: 0;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
 }
 
 #menu-toggle span {
@@ -255,7 +255,7 @@ nav li a {
 
     nav ul {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 65px;
         height: 100vh;
         bottom: 0;
