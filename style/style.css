@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: inline;
+}
+
+.container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 3px 0  rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav h1 {
+    float: left;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #8ED1FC;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 18px 15px;
+    font-size: 18px;
+}
+
+.aktif::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #8ED1FC;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+}
+
+.btn {
+    background: #8ED1FC;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-top: 8px;
+}
+
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+}
+
+#menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+#menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+#menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+
+#menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg);
+}
+
+#menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+.jumbotron {
+    display: flex;
+}
+
+.banner {
+    flex-grow: 1;
+}
+
+.banner img  {
+    width: 550px;
+    height: 450px;
+}
+
+.title {
+    font-size: 33px;
+    padding: 70px 0px 30px 0px;
+}
+
+.desc {
+    color: #6b6967;
+    font-size: 23px;
+}
+
+.button {
+    margin-top: 30px;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.button a{
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #91b7fc21;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid #8ED1FC;
+}
+
+/* Line */
+/* .line {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #6b6967;
+    border-radius: 3px;
+    margin: -205px auto;
+    bottom: 200px;
+    right: 20px;
+    left: 20px;
+    z-index: -1;
+} */
+
+/* Fitur */
+.spesial-judul {
+    text-align: center;
+    margin: 150px auto 30px auto;
+}
+
+.fitur {
+    display: flex;
+}
+
+.fitur img {
+    width: 400px;
+    height: 300px;
+}
+
+.pertama {
+    flex-grow: 1;
+}
+
+.kedua {
+    margin-top: 100px;
+    flex-grow: 10;
+}
+
+.ket {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6b6967;
+}
+
+/* Daftar Buku */
+.judul {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buku {
+    width: 200px;
+    height: 300px;
+    margin-left: 2%;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 760px) {
+    nav h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        display: flex;
+        position: absolute;
+        top: 65px;
+        height: 100vh;
+        bottom: 0;
+        padding: 40px 20px;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 2px 5px 0  rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
+    
+    nav ul.toggle {
+        transform: translateX(0);
+    }
+
+    #menu-toggle {
+        display: flex;
+    }
+
+    .jumbotron {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .banner .title {
+        font-size: 25px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .banner .desc {
+        font-size: 20px;
+    }
+
+    .button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button a {
+        padding: 8px 8px;
+        font-size: 18px;
+    }
+
+    .button a:first-child {
+        margin-bottom: 5px;
+    }
+
+    /* .line {
+        margin: -50px auto;
+        width: 80%;
+    } */
+
+    .spesial-judul {
+        margin: 70px auto 30px auto;
+    }
+
+    .fitur {
+        flex-direction: column;
+    }
+
+    #fitur .fitur:nth-child(3) .pertama {
+        order: 1;
+    }
+
+    #fitur .fitur:nth-child(3) .kedua {
+        order: 2;
+    }
+
+    #fitur .fitur:last-child .pertama {
+        order: 1;
+    }
+
+    #fitur .fitur:last-child .kedua {
+        order: 2;
+    }
+
+    .fitur img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .fitur .kedua {
+        margin-top: 0px;
+    }
+
+    .kedua .ket {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
