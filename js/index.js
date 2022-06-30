@@ -19,3 +19,17 @@ menuToggle.addEventListener('click', function() {
         }
     }
 });
+
+const ul = document.querySelector('ul');
+const a = document.querySelectorAll('a');
+
+ul.addEventListener('click', function (e) {
+
+    a.forEach(function (a) {
+        a.className = 'link';
+    });
+
+    if(e.target.classList.contains('link')) {
+        e.target.classList.add('aktif');
+    }
+});

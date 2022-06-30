@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 * {
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
     min-height: 5000px;
 }
@@ -80,7 +80,7 @@ nav li a {
     margin-bottom: -6px;
 }
 
-.btn {
+#btn {
     background: #8ED1FC;
     color: white;
     border-radius: 10px;
@@ -166,7 +166,7 @@ nav li a {
 .button {
     margin-top: 30px;
     display: flex;
-    width: 60%;
+    width: 65%;
     justify-content: space-between;
 }
 
@@ -178,7 +178,7 @@ nav li a {
     background-color: #91b7fc21;
     color: black;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     border: 2px solid #8ED1FC;
 }
 
@@ -247,6 +247,7 @@ nav li a {
     }
 
     nav ul {
+        width: 50%;
         display: flex;
         position: fixed;
         top: 65px;
