@@ -9,7 +9,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
-    min-height: 5000px;
+    min-height: 6000px;
 }
 
 header {
@@ -139,6 +139,7 @@ nav li a {
     transform: scale(0);
 }
 
+/* Jumbotron */
 .jumbotron {
     display: flex;
 }
@@ -254,6 +255,11 @@ nav li a {
     font-size: 20px;
 }
 
+.kanan img {
+    width: 200px;
+    height: 200px;
+}
+
 .kanan a {
     position: absolute;
     margin-top: -35px;
@@ -280,17 +286,17 @@ nav li a {
     float: left;
 }
 
-.right {
+.kiri .right {
     float: right;
     width: 80%;
 }
 
-.right h3 {
+.kiri .right h3 {
     margin-bottom: 10px;
 }
 
 .kiri p {
-    margin-bottom: 50px;
+    margin-top: 95px;
 }
 
 /* Responsive Mobile*/
@@ -343,8 +349,7 @@ nav li a {
     }
 
     .button {
-        flex-direction: column;
-        width: 100%;
+        width: 52.5%;
     }
 
     .button a {
@@ -352,16 +357,8 @@ nav li a {
         font-size: 18px;
     }
 
-    .button a:first-child {
-        margin-bottom: 15px;
-    }
-
     .line {
         margin: 50px auto 20px;
-    }
-
-    .spesial-judul {
-        margin: 70px auto 30px auto;
     }
 
     .fitur {
@@ -395,5 +392,57 @@ nav li a {
 
     .kedua .ket {
         margin-bottom: 20px;
+    }
+
+    .kanan, .kiri {
+        width: 100%;
+    }
+
+    .kanan {
+        margin-bottom: 20px;
+    }
+
+    .kiri .right {
+        width: 85%;
+    }
+
+    .kiri p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .desc {
+        text-align: start;
+    }
+    
+    .button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button a:first-child {
+        margin-bottom: 15px;
+    }
+
+    .fitur .ket {
+        text-align: start;
+    }
+
+    .kanan p {
+        font-size: 17px;
+    }
+
+    .kanan img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .kiri .right {
+        width: 65%;
+    }
+
+    .kiri p {
+        font-size: 17px;
     }
 }
