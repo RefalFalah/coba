@@ -240,6 +240,59 @@ nav li a {
     margin-top: 10px;
 }
 
+/* Tentang Kami */
+.kanan {
+    float: left;
+    width: 48%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.kanan p {
+    font-size: 20px;
+}
+
+.kanan a {
+    position: absolute;
+    margin-top: -35px;
+}
+
+.kiri {
+    float: right;
+    width: 48%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.kiri .left {
+    float: left;
+    width: 10%;
+}
+
+.kiri img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 80%;
+}
+
+.right h3 {
+    margin-bottom: 10px;
+}
+
+.kiri p {
+    margin-bottom: 50px;
+}
+
 /* Responsive Mobile*/
 @media screen and (max-width: 850px) {
     nav h1 {
@@ -300,7 +353,7 @@ nav li a {
     }
 
     .button a:first-child {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     .line {
