@@ -263,6 +263,7 @@ nav li a {
 .kanan a {
     position: absolute;
     margin-top: -35px;
+    z-index: -1;
 }
 
 .kiri {
@@ -299,8 +300,35 @@ nav li a {
     margin-top: 95px;
 }
 
-/* Responsive Mobile*/
-@media screen and (max-width: 850px) {
+/* Responsive*/
+@media screen and (max-width: 1025px) {
+    .banner .title {
+        font-size: 28px;
+    }
+
+    .banner .desc {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .button a {
+        padding: 8px 8px;
+        font-size: 18px;
+    }
+
+    .kanan p {
+        font-size: 18px;
+    }
+
+    .kiri .right {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 950px) {
     nav h1 {
         font-size: 25px;
     }
@@ -340,21 +368,21 @@ nav li a {
     }
 
     .banner .title {
-        font-size: 25px;
+        font-size: 35px;
         padding: 15px 0px 15px 0px;
     }
 
     .banner .desc {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .button {
-        width: 52.5%;
+        width: 50%;
     }
 
     .button a {
         padding: 8px 8px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .line {
@@ -390,12 +418,21 @@ nav li a {
         margin-top: 0px;
     }
 
+    .fitur h3 {
+        font-size: 26px;
+    }
+
     .kedua .ket {
         margin-bottom: 20px;
+        font-size: 22px;
     }
 
     .kanan, .kiri {
         width: 100%;
+    }
+
+    .kanan {
+        height: 240px;
     }
 
     .kanan {
@@ -411,7 +448,40 @@ nav li a {
     }
 }
 
+@media screen and (max-width: 850px) {
+    .button {
+        width: 55%;
+    }
+
+    .kanan {
+        height: 260px;
+    }
+
+    .kanan p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .button {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 550px) {
+    .banner .title {
+        font-size: 25px;
+    }
+
+    .banner .desc {
+        font-size: 18px;
+    }
+
+    .button a {
+        padding: 7px 7px;
+        font-size: 15px;
+    }
+
     .desc {
         text-align: start;
     }
@@ -425,8 +495,17 @@ nav li a {
         margin-bottom: 15px;
     }
 
+    .fitur h3 {
+        font-size: 23px;
+    }
+
     .fitur .ket {
         text-align: start;
+        font-size: 17px;
+    }
+
+    .kanan {
+        height: 230px;
     }
 
     .kanan p {
@@ -444,5 +523,28 @@ nav li a {
 
     .kiri p {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .kanan {
+        height: 270px;
+    }
+}
+
+
+@media screen and (max-width: 395px) {
+    .kanan {
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .kanan {
+        height: 370px;
+    }
+
+    .kiri .right {
+        width: 55%;
     }
 }
