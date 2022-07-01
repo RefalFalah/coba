@@ -296,6 +296,7 @@ nav li a {
 }
 
 .kiri p {
+    font-size: 18px;
     margin-top: 95px;
 }
 
@@ -392,6 +393,10 @@ footer {
 
     .kiri .right {
         width: 75%;
+    }
+
+    .kiri p {
+        font-size: 17px;
     }
 }
 
@@ -542,6 +547,10 @@ footer {
     .button {
         width: 60%;
     }
+
+    .kolom {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -615,8 +624,12 @@ footer {
         height: 270px;
     }
 
+    .kiri {
+        height: 350px;
+    }
+
     footer {
-        margin-top: 700px;
+        margin-top: 720px;
     }
 }
 
@@ -625,6 +638,14 @@ footer {
     .kanan {
         height: 290px;
     }
+
+    .kiri {
+        height: 385px;
+    }
+
+    footer {
+        margin-top: 770px;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -632,7 +653,16 @@ footer {
         height: 370px;
     }
 
+    .kiri {
+        height: 500px;
+    }
+
     .kiri .right {
         width: 55%;
+    }
+    
+
+    footer {
+        margin-top: 950px;
     }
 }
