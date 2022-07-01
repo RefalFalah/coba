@@ -337,13 +337,13 @@ footer {
 .kolom ul li a {
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
     color: white;
     display: block;
     transition: all 0.3s ease;
 }
 
 .kolom ul li a:hover {
+    font-weight: 600;
     padding-left: 8px;
 }
 
@@ -353,18 +353,18 @@ footer {
 
 .sosmed a {
     display: inline-block;
-    height: 50px;
-    width: 50px;
-    line-height: 70px;
-    background-color: white;
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
     margin: 0px 10px 10px 0px;
     text-align: center;
     border-radius: 50%;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
 }
 
 .sosmed a:hover {
-    background-color: #8ED1FC;
+    background-color: white;
 }
 
 /* Responsive*/
@@ -513,6 +513,10 @@ footer {
     .kiri p {
         font-size: 20px;
     }
+
+    footer {
+        margin-top: 650px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -526,6 +530,11 @@ footer {
 
     .kanan p {
         font-size: 20px;
+    }
+
+    .sosmed {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -591,11 +600,23 @@ footer {
     .kiri p {
         font-size: 17px;
     }
+
+    .baris {
+        flex-direction: column;
+    }
+
+    .kolom {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .kanan {
         height: 270px;
+    }
+
+    footer {
+        margin-top: 700px;
     }
 }
 
